@@ -1,6 +1,6 @@
 {
-  "name": "bandit-theme",
-  "theme": "bandit-ui",
+  "name": "bandit-ui",
+  "theme": "ui",
   "version": "0.0.0",
   "description": "A work in progress",
   "keywords": [
