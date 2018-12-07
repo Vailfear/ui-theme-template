@@ -41,28 +41,74 @@ atom-text-editor[mini] {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-atom-text-editor{
+.bottom{
+  atom-text-editor{
     .scroll-view{
-        background-color: #fff;
         .line{
-            color: #000;
             .syntax--text{
                 color: #000;
-                background: #fff;
             }
         }
     }
-
+  }
 }
-atom-dock.left{
-    atom-pane-container{
-        .tab-bar{
-            background: url("//df-logo-light.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            .title{
-                display: none;
+.right{
+  .github-StagingView-group.is-focused .is-selected{
+    background: @ds-dark-blue;
+  }
+  .github-StagingView{
+    .github-StagedChanges,
+    .github-UnstagedChanges{
+      background-color: @black;
+      border-top: 1px solid @ds-blue;
+    }
+  }
+  .github-CommitView, .github-RecentCommits{
+    background-color: @black;
+    border-top: 1px solid @ds-blue;
+  }
+  atom-text-editor{
+    background-color: #fff;
+    .scroll-view{
+        .line{
+            .syntax--text{
+                color: @black;
             }
         }
     }
+  }
+}
+.atom-dock-resize-handle.atom-dock-resize-handle-resizable.left,
+.atom-dock-resize-handle.atom-dock-resize-handle-resizable.right{
+    background-color: @ds-blue;
+}
+.atom-dock-toggle-button .atom-dock-toggle-button-inner{
+  background-color: @ds-dark-blue;
+}
+atom-pane-container atom-pane .item-views .pane-item{
+  background-color: @black;
+}
+.settings-view .package-card{
+  background-color: @ds-dark-blue;
+}
+.settings-view .config-menu{
+  background-color: @black;
+}
+.settings-view .config-menu .nav > li > a{
+  color: #fff;
+}
+.settings-view .config-menu .nav > li > a:hover,
+.settings-view .config-menu .nav > li.active > a{
+  background-color: @ds-blue;
+  color: #fff;
+}
+.settings-view .setting-description,
+.settings-view select.form-control{
+  color: #fff;
+}
+atom-text-editor .gutter .line-number{
+  color: @ds-dark-blue;
+}
+atom-text-editor .gutter .line-number.cursor-line{
+  color: @ds-blue-bright;
 }

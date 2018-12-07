@@ -12,9 +12,12 @@
 
 .tree-view {
   color: @text-color;
-  background-color: @tree-view-background-color;
+  background-color: @black;
 
   .list-item.selected {
     color: @text-color-selected;
+  }
+  .list-group .selected::before, .list-tree .selected::before{
+    background-color: @ds-dark-blue;
   }
 }
